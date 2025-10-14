@@ -96,3 +96,8 @@ DELETE: Delete a post
 
 - Best for Big Data & Real-Time Apps
   - Great for fast changing or huge amounts of data
+
+# CORS (Cross Origin Resource Sharing)
+
+- A browser security rule
+- When a website tries to get dtaa from another website, like your frontend calling an API on a different domain, the browser might block it for security reasons
