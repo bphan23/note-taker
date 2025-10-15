@@ -101,3 +101,7 @@ DELETE: Delete a post
 
 - A browser security rule
 - When a website tries to get dtaa from another website, like your frontend calling an API on a different domain, the browser might block it for security reasons
+
+# deployment model
+
+- both frontend and backend will be on one domain
