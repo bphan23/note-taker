@@ -1,107 +1,118 @@
-# note-taker
+# 📝 Note-Taker
 
-# Tech Stack - MERN (Mongodb, Express, React, Node)
-
-# Frontend
-
-React.js - frontend library
-
-# Backend
-
-Node.js - JavaScript runtime, allows you to run JS on server
-
-# DB
-
-# Mongodb
-
-# Express (Web framework) - ready to use toolbox for building web apps faster and more easily
-
-We want to use because:
-
-- It saves time
-- Makes code clearner and more organized
-- Handles common tasks (like routingm error handling, etc.)
-
-# Application Programming Interface
-
-- It allows two different apps to talk to each other
-
-# REST API
-
-- It uses HTTP methods
-
-GET: Get some posts
-POST: Create a post
-PUT: Update a post
-DELETE: Delete a post
-
-# Status Codes
-
-1xx means (Informational)
-2xx means (Success)
-
-- 200 OK, Everything worked as expected
-- 201 Created, New resource successfully created (e.g., after a POST request).
-
-3xx means (Redirection)
-
-- The 300 status code are for redirection meaning the server is telling the client, "Hey, the thing you're looking for is somewhere else."
-- 301 Moved permanently
-  - Ex.) Your site changes form http://example.com to https://example.com.
-    You set up a 301 redirect so visitors and Google know to go to the new one.
-
-4xx means (Client Errors)
-
-- These happen when the problem is on the user's side meaning your browser or app made a bad request.
-- Think of it like: "You (the client) messed up."
-
-400 Bad Request - The request is malformed or invalid.
-401 Unauthorized - You must log in (missing or invalid credentials)
-403 Forbidden - You're not allowed to access this
-404 Not Found - The URL doesn't exist
-429 Too Many Requests
-
-5xx means (Server Errors)
-
-- These happen when something goes wrong on the server side even though the client made a valid requests.
-- Think of it like: "The server tried, but failed"
-
-500 Internal Server Error - Something broke on the server.
-503 Service Unavailable - Server is temporarily overloaded or down.
+A full-stack note-taking application built with the **MERN** stack.
 
 ---
 
-#SQL
+## 🧱 Tech Stack
 
-- Structured Data
+**MERN** = MongoDB + Express + React + Node.js
 
-  - Data is stored in tables with rows and columns, like a spreadsheet
+### 🔹 Frontend
 
-- Uses SQL Language
+- **React.js** – JavaScript library for building user interfaces
 
-  - You use structured queries (SELECT, INSERT, etc.) to interact with the database
+### 🔹 Backend
 
-- Best for Complex Queries
-  - Ideal when you need relationships between data like orders and customers
+- **Node.js** – JavaScript runtime for running JS on the server
+- **Express.js** – Web framework that simplifies building APIs and handling routing, middleware, etc.
 
-#NOSQL
+  **Why Express?**
 
-- Flexible Data Format
+  - Saves development time
+  - Keeps code cleaner and more organized
+  - Handles common tasks like routing and error handling
 
-  - Stores data like JSON or key-value pairs - good for changing data shapes.
+### 🔹 Database
 
-- Uses Query Language or API
+- **MongoDB** – NoSQL database for flexible, JSON-like document storage
 
-  - Each NoSQL database has its own way of querying often simplier and faster for certain tasks
+---
 
-- Best for Big Data & Real-Time Apps
-  - Great for fast changing or huge amounts of data
+## 🔌 API Overview
 
-# CORS (Cross Origin Resource Sharing)
+### What is an API?
 
-- A browser security rule
-- When a website tries to get dtaa from another website, like your frontend calling an API on a different domain, the browser might block it for security reasons
+- An **Application Programming Interface** allows two different applications to communicate with each other.
 
-# deployment model
+### REST API
 
-- both frontend and backend will be on one domain
+- Uses standard HTTP methods:
+
+| Method | Description          |
+| ------ | -------------------- |
+| GET    | Retrieve data        |
+| POST   | Create new data      |
+| PUT    | Update existing data |
+| DELETE | Remove data          |
+
+---
+
+## ✅ HTTP Status Codes
+
+### 1xx – Informational
+
+- Request received, continuing process
+
+### 2xx – Success
+
+- **200 OK** – Request succeeded
+- **201 Created** – Resource successfully created (e.g., after a POST)
+
+### 3xx – Redirection
+
+- Server is redirecting the client
+- **301 Moved Permanently** – e.g., redirect from `http://` to `https://`
+
+### 4xx – Client Errors
+
+- The issue is on the client side
+- **400 Bad Request** – Malformed or invalid request
+- **401 Unauthorized** – Missing or invalid credentials
+- **403 Forbidden** – Access denied
+- **404 Not Found** – Resource doesn't exist
+- **429 Too Many Requests** – Rate limit exceeded
+
+### 5xx – Server Errors
+
+- The issue is on the server side
+- **500 Internal Server Error** – Server encountered an unexpected condition
+- **503 Service Unavailable** – Server is temporarily overloaded or down
+
+---
+
+## 🗃️ SQL vs NoSQL
+
+### SQL (Structured Data)
+
+- Data stored in tables with rows and columns
+- Uses SQL language (e.g., SELECT, INSERT)
+- Best for complex queries and relational data (e.g., orders and customers)
+
+### NoSQL (Flexible Data)
+
+- Stores data as JSON or key-value pairs
+- Uses custom query languages or APIs
+- Best for big data and real-time applications
+
+---
+
+## 🔐 CORS (Cross-Origin Resource Sharing)
+
+- A browser security feature
+- Prevents websites from accessing resources from another domain unless explicitly allowed
+- Common issue when frontend and backend are hosted separately
+
+---
+
+## 🚀 Deployment Model
+
+- Both frontend and backend are hosted on the same domain
+
+---
+
+## 🛠️ Notes
+
+- Used **daisyUI** for theming
+- Used **lucide** for icons
+- Used **toast** for notifications
